@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    transition: 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0D192C;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    background-color: #15263F;
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.0953);
+
+    border-radius: 0.6rem;
+
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+    h1:hover{
+        color: #00fff8;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: #8BACD9;
+
+    }
+
+    .value {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #cripto {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: #00fff8;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        #timer {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: #8bacd9;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #2E405A;
+
+    }
+
+    .creating {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #8BACD9;
+
+            strong {
+                color: #fff;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            strong:hover{
+                color: #00fff8;
+            }
+        }
+    }
+}
+
+.img-content {
+    width: 100%;
+    height: 302px;
+    position: relative;
+    background-image: url('./assets/image.png');
+    background-size: contain;
+
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.img-content:hover::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 255, 247, 0.4);
+    transition: 1s;
+    border-radius: 0.6rem;
+    z-index: 1;
+    background-image: url('assets/Eye.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
